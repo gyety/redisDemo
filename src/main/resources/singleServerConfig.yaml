@@ -6,15 +6,15 @@ singleServerConfig:
   retryAttempts: 3
   retryInterval: 1500
   password: maferedis
-  subscriptionsPerConnection: 5
+  #subscriptionsPerConnection: 5
   clientName: null
   address: "redis://39.100.7.158:6379"
-  subscriptionConnectionMinimumIdleSize: 1
-  subscriptionConnectionPoolSize: 50
-  connectionMinimumIdleSize: 32
+ # subscriptionConnectionMinimumIdleSize: 0
+  #subscriptionConnectionPoolSize: 0
+  connectionMinimumIdleSize: 1
   connectionPoolSize: 64
   database: 0
 threads: 0
 nettyThreads: 0
-codec: !<org.redisson.codec.JsonJacksonCodec> {}
+#codec: !<org.redisson.codec.JsonJacksonCodec> {}
 "transportMode": "NIO"
